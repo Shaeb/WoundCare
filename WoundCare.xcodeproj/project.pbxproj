@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		431166791235882900E42B80 /* BradenScoreDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 431166771235882900E42B80 /* BradenScoreDetailViewController.m */; };
+		4311667A1235882900E42B80 /* BradenScoreDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 431166781235882900E42B80 /* BradenScoreDetailViewController.xib */; };
+		434D44F9126721F4006951B0 /* PressureUlcerAssessmentDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 434D44F8126721F4006951B0 /* PressureUlcerAssessmentDataObject.m */; };
+		434D44FC126731DA006951B0 /* DrainageDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 434D44FB126731DA006951B0 /* DrainageDataObject.m */; };
+		43785C091245A84C0042B878 /* PressureUlcerAssessmentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43785C071245A84C0042B878 /* PressureUlcerAssessmentTableViewController.m */; };
+		43785C0A1245A84C0042B878 /* PressureUlcerAssessmentTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43785C081245A84C0042B878 /* PressureUlcerAssessmentTableViewController.xib */; };
+		43785C141245ACD40042B878 /* PressureUlcerStagingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43785C121245ACD40042B878 /* PressureUlcerStagingTableViewController.m */; };
+		43785C151245ACD40042B878 /* PressureUlcerStagingTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43785C131245ACD40042B878 /* PressureUlcerStagingTableViewController.xib */; };
+		4380E312123689120052E7C1 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4380E310123689120052E7C1 /* SettingsTableViewController.m */; };
+		4380E313123689120052E7C1 /* SettingsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4380E311123689120052E7C1 /* SettingsTableViewController.xib */; };
+		4381BC901246C7F600BCFF3F /* CellDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4381BC8F1246C7F600BCFF3F /* CellDataObject.m */; };
+		4381BC9E1246DACC00BCFF3F /* MeasurementsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4381BC9C1246DACC00BCFF3F /* MeasurementsDetailViewController.m */; };
+		4381BC9F1246DACC00BCFF3F /* MeasurementsDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4381BC9D1246DACC00BCFF3F /* MeasurementsDetailViewController.xib */; };
+		4382379C124AA8BA00109712 /* Query.m in Sources */ = {isa = PBXBuildFile; fileRef = 4382379B124AA8BA00109712 /* Query.m */; };
+		4386011B1236D1DE00D06B67 /* PinCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 438601191236D1DE00D06B67 /* PinCodeViewController.m */; };
+		4386011C1236D1DE00D06B67 /* PinCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4386011A1236D1DE00D06B67 /* PinCodeViewController.xib */; };
+		438601281236FE6F00D06B67 /* application_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 438601271236FE6F00D06B67 /* application_icon.png */; };
+		4386A5B61238772400958E2B /* ResultSetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4386A5B51238772400958E2B /* ResultSetCell.m */; };
+		4386A5BE12387A3900958E2B /* Database.m in Sources */ = {isa = PBXBuildFile; fileRef = 4386A5BD12387A3900958E2B /* Database.m */; };
+		4386A5C212387B2600958E2B /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4386A5C112387B2600958E2B /* libsqlite3.0.dylib */; };
+		4389FA4F124FEB2100A37A6C /* InputViewAccessoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4389FA4D124FEB2100A37A6C /* InputViewAccessoryController.m */; };
+		4389FA50124FEB2100A37A6C /* InputViewAccessoryController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4389FA4E124FEB2100A37A6C /* InputViewAccessoryController.xib */; };
+		438A164F123804E2004DB3A7 /* PickerViewAutomator.m in Sources */ = {isa = PBXBuildFile; fileRef = 438A164E123804E2004DB3A7 /* PickerViewAutomator.m */; };
+		438A610F124400F700B55189 /* DataObjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 438A610E124400F700B55189 /* DataObjectModel.m */; };
+		438E432D1235A76E00EA8EC6 /* WoundImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 438E432B1235A76E00EA8EC6 /* WoundImageViewController.m */; };
+		438E432E1235A76E00EA8EC6 /* WoundImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 438E432C1235A76E00EA8EC6 /* WoundImageViewController.xib */; };
+		438E43411235ADD000EA8EC6 /* NewPatientDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 438E433F1235ADD000EA8EC6 /* NewPatientDetailViewController.m */; };
+		438E43421235ADD000EA8EC6 /* NewPatientDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 438E43401235ADD000EA8EC6 /* NewPatientDetailViewController.xib */; };
+		438E435B1235D3D600EA8EC6 /* NewPatientEncounterDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 438E43591235D3D600EA8EC6 /* NewPatientEncounterDetailViewController.m */; };
+		438E435C1235D3D600EA8EC6 /* NewPatientEncounterDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 438E435A1235D3D600EA8EC6 /* NewPatientEncounterDetailViewController.xib */; };
+		439251C41287568800E9D1B7 /* WoundLocationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 439251C21287568800E9D1B7 /* WoundLocationTableViewController.m */; };
+		439251C51287568800E9D1B7 /* WoundLocationTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 439251C31287568800E9D1B7 /* WoundLocationTableViewController.xib */; };
+		4399FBF512879E6F00FA8101 /* WoundObjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4399FBF412879E6F00FA8101 /* WoundObjectModel.m */; };
+		43B17BE712393C7F00F523B1 /* woundcare.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 43B17BE612393C7F00F523B1 /* woundcare.sqlite */; };
+		43CC743F12391E0900281825 /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = 43CC743E12391E0900281825 /* Patient.m */; };
+		43D3BEA2126D19B80028CCF6 /* WoundTypesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D3BEA0126D19B80028CCF6 /* WoundTypesTableViewController.m */; };
+		43D3BEA3126D19B80028CCF6 /* WoundTypesTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43D3BEA1126D19B80028CCF6 /* WoundTypesTableViewController.xib */; };
+		43D93CCB1246E8E9007566FE /* WoundsDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D93CCA1246E8E9007566FE /* WoundsDataObject.m */; };
+		43D93CCE1246E9FB007566FE /* FacilityDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D93CCD1246E9FB007566FE /* FacilityDataObject.m */; };
+		43D93CD41246EC96007566FE /* EncounterDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D93CD31246EC96007566FE /* EncounterDataModel.m */; };
+		43D93CD81246EDAD007566FE /* WoundsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D93CD61246EDAD007566FE /* WoundsTableViewController.m */; };
+		43D93CD91246EDAD007566FE /* WoundsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43D93CD71246EDAD007566FE /* WoundsTableViewController.xib */; };
+		43EC05731235639D00719AE9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43EC05721235639D00719AE9 /* UIKit.framework */; };
+		43EC05751235639D00719AE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43EC05741235639D00719AE9 /* Foundation.framework */; };
+		43EC05771235639D00719AE9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43EC05761235639D00719AE9 /* CoreGraphics.framework */; };
+		43EC057C1235639D00719AE9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 43EC057A1235639D00719AE9 /* InfoPlist.strings */; };
+		43EC057E1235639D00719AE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43EC057D1235639D00719AE9 /* main.m */; };
+		43EC05811235639D00719AE9 /* WoundCareAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43EC05801235639D00719AE9 /* WoundCareAppDelegate.m */; };
+		43EC05841235639E00719AE9 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43EC05821235639E00719AE9 /* MainWindow.xib */; };
+		43EC058D1235653400719AE9 /* PatientListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43EC058B1235653400719AE9 /* PatientListTableViewController.m */; };
+		43EC058E1235653400719AE9 /* PatientListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43EC058C1235653400719AE9 /* PatientListTableViewController.xib */; };
+		43EC059712356AA500719AE9 /* PatientEncounterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43EC059512356AA500719AE9 /* PatientEncounterTableViewController.m */; };
+		43EC059812356AA500719AE9 /* PatientEncounterTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43EC059612356AA500719AE9 /* PatientEncounterTableViewController.xib */; };
+		43EC05AB12356E9A00719AE9 /* PatientEncounterDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43EC05A912356E9A00719AE9 /* PatientEncounterDetailViewController.m */; };
+		43EC05AC12356E9A00719AE9 /* PatientEncounterDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43EC05AA12356E9A00719AE9 /* PatientEncounterDetailViewController.xib */; };
+		43F2913B1235743C000DA6C7 /* PressureUlcerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F291391235743C000DA6C7 /* PressureUlcerDetailViewController.m */; };
+		43F2913C1235743C000DA6C7 /* PressureUlcerDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43F2913A1235743C000DA6C7 /* PressureUlcerDetailViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		431166761235882900E42B80 /* BradenScoreDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BradenScoreDetailViewController.h; path = ../BradenScoreDetailViewController.h; sourceTree = "<group>"; };
+		431166771235882900E42B80 /* BradenScoreDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BradenScoreDetailViewController.m; path = ../BradenScoreDetailViewController.m; sourceTree = "<group>"; };
+		431166781235882900E42B80 /* BradenScoreDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BradenScoreDetailViewController.xib; sourceTree = "<group>"; };
+		434D44F7126721F4006951B0 /* PressureUlcerAssessmentDataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PressureUlcerAssessmentDataObject.h; path = ../PressureUlcerAssessmentDataObject.h; sourceTree = "<group>"; };
+		434D44F8126721F4006951B0 /* PressureUlcerAssessmentDataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PressureUlcerAssessmentDataObject.m; path = ../PressureUlcerAssessmentDataObject.m; sourceTree = "<group>"; };
+		434D44FA126731DA006951B0 /* DrainageDataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrainageDataObject.h; path = ../DrainageDataObject.h; sourceTree = "<group>"; };
+		434D44FB126731DA006951B0 /* DrainageDataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DrainageDataObject.m; path = ../DrainageDataObject.m; sourceTree = "<group>"; };
+		43785C061245A84C0042B878 /* PressureUlcerAssessmentTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PressureUlcerAssessmentTableViewController.h; path = ../PressureUlcerAssessmentTableViewController.h; sourceTree = "<group>"; };
+		43785C071245A84C0042B878 /* PressureUlcerAssessmentTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PressureUlcerAssessmentTableViewController.m; path = ../PressureUlcerAssessmentTableViewController.m; sourceTree = "<group>"; };
+		43785C081245A84C0042B878 /* PressureUlcerAssessmentTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PressureUlcerAssessmentTableViewController.xib; sourceTree = "<group>"; };
+		43785C111245ACD40042B878 /* PressureUlcerStagingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PressureUlcerStagingTableViewController.h; path = ../PressureUlcerStagingTableViewController.h; sourceTree = "<group>"; };
+		43785C121245ACD40042B878 /* PressureUlcerStagingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PressureUlcerStagingTableViewController.m; path = ../PressureUlcerStagingTableViewController.m; sourceTree = "<group>"; };
+		43785C131245ACD40042B878 /* PressureUlcerStagingTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PressureUlcerStagingTableViewController.xib; sourceTree = "<group>"; };
+		4380E30F123689120052E7C1 /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsTableViewController.h; path = ../SettingsTableViewController.h; sourceTree = "<group>"; };
+		4380E310123689120052E7C1 /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsTableViewController.m; path = ../SettingsTableViewController.m; sourceTree = "<group>"; };
+		4380E311123689120052E7C1 /* SettingsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsTableViewController.xib; sourceTree = "<group>"; };
+		4381BC8E1246C7F600BCFF3F /* CellDataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CellDataObject.h; path = ../CellDataObject.h; sourceTree = "<group>"; };
+		4381BC8F1246C7F600BCFF3F /* CellDataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CellDataObject.m; path = ../CellDataObject.m; sourceTree = "<group>"; };
+		4381BC9B1246DACC00BCFF3F /* MeasurementsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MeasurementsDetailViewController.h; path = ../MeasurementsDetailViewController.h; sourceTree = "<group>"; };
+		4381BC9C1246DACC00BCFF3F /* MeasurementsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MeasurementsDetailViewController.m; path = ../MeasurementsDetailViewController.m; sourceTree = "<group>"; };
+		4381BC9D1246DACC00BCFF3F /* MeasurementsDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeasurementsDetailViewController.xib; sourceTree = "<group>"; };
+		4382379A124AA8BA00109712 /* Query.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Query.h; path = ../Query.h; sourceTree = "<group>"; };
+		4382379B124AA8BA00109712 /* Query.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Query.m; path = ../Query.m; sourceTree = "<group>"; };
+		4382379D124AA9C600109712 /* Serializing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Serializing.h; path = ../Serializing.h; sourceTree = "<group>"; };
+		438601181236D1DE00D06B67 /* PinCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PinCodeViewController.h; path = ../PinCodeViewController.h; sourceTree = "<group>"; };
+		438601191236D1DE00D06B67 /* PinCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PinCodeViewController.m; path = ../PinCodeViewController.m; sourceTree = "<group>"; };
+		4386011A1236D1DE00D06B67 /* PinCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PinCodeViewController.xib; sourceTree = "<group>"; };
+		438601271236FE6F00D06B67 /* application_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = application_icon.png; sourceTree = "<group>"; };
+		4386A5B41238772400958E2B /* ResultSetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResultSetCell.h; path = ../ResultSetCell.h; sourceTree = "<group>"; };
+		4386A5B51238772400958E2B /* ResultSetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResultSetCell.m; path = ../ResultSetCell.m; sourceTree = "<group>"; };
+		4386A5BC12387A3900958E2B /* Database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Database.h; sourceTree = "<group>"; };
+		4386A5BD12387A3900958E2B /* Database.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Database.m; sourceTree = "<group>"; };
+		4386A5C112387B2600958E2B /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libsqlite3.0.dylib; sourceTree = "<group>"; };
+		4389FA4C124FEB2100A37A6C /* InputViewAccessoryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InputViewAccessoryController.h; path = ../InputViewAccessoryController.h; sourceTree = "<group>"; };
+		4389FA4D124FEB2100A37A6C /* InputViewAccessoryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InputViewAccessoryController.m; path = ../InputViewAccessoryController.m; sourceTree = "<group>"; };
+		4389FA4E124FEB2100A37A6C /* InputViewAccessoryController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputViewAccessoryController.xib; sourceTree = "<group>"; };
+		438A164D123804E2004DB3A7 /* PickerViewAutomator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PickerViewAutomator.h; path = ../PickerViewAutomator.h; sourceTree = "<group>"; };
+		438A164E123804E2004DB3A7 /* PickerViewAutomator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PickerViewAutomator.m; path = ../PickerViewAutomator.m; sourceTree = "<group>"; };
+		438A610D124400F700B55189 /* DataObjectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataObjectModel.h; path = ../DataObjectModel.h; sourceTree = "<group>"; };
+		438A610E124400F700B55189 /* DataObjectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataObjectModel.m; path = ../DataObjectModel.m; sourceTree = "<group>"; };
+		438E432A1235A76E00EA8EC6 /* WoundImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WoundImageViewController.h; path = ../WoundImageViewController.h; sourceTree = "<group>"; };
+		438E432B1235A76E00EA8EC6 /* WoundImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WoundImageViewController.m; path = ../WoundImageViewController.m; sourceTree = "<group>"; };
+		438E432C1235A76E00EA8EC6 /* WoundImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WoundImageViewController.xib; sourceTree = "<group>"; };
+		438E433E1235ADD000EA8EC6 /* NewPatientDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewPatientDetailViewController.h; path = ../NewPatientDetailViewController.h; sourceTree = "<group>"; };
+		438E433F1235ADD000EA8EC6 /* NewPatientDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewPatientDetailViewController.m; path = ../NewPatientDetailViewController.m; sourceTree = "<group>"; };
+		438E43401235ADD000EA8EC6 /* NewPatientDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewPatientDetailViewController.xib; sourceTree = "<group>"; };
+		438E43581235D3D600EA8EC6 /* NewPatientEncounterDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewPatientEncounterDetailViewController.h; path = ../NewPatientEncounterDetailViewController.h; sourceTree = "<group>"; };
+		438E43591235D3D600EA8EC6 /* NewPatientEncounterDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewPatientEncounterDetailViewController.m; path = ../NewPatientEncounterDetailViewController.m; sourceTree = "<group>"; };
+		438E435A1235D3D600EA8EC6 /* NewPatientEncounterDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewPatientEncounterDetailViewController.xib; sourceTree = "<group>"; };
+		439251C11287568800E9D1B7 /* WoundLocationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WoundLocationTableViewController.h; path = ../WoundLocationTableViewController.h; sourceTree = "<group>"; };
+		439251C21287568800E9D1B7 /* WoundLocationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WoundLocationTableViewController.m; path = ../WoundLocationTableViewController.m; sourceTree = "<group>"; };
+		439251C31287568800E9D1B7 /* WoundLocationTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WoundLocationTableViewController.xib; sourceTree = "<group>"; };
+		4399FBF312879E6F00FA8101 /* WoundObjectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WoundObjectModel.h; path = ../WoundObjectModel.h; sourceTree = "<group>"; };
+		4399FBF412879E6F00FA8101 /* WoundObjectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WoundObjectModel.m; path = ../WoundObjectModel.m; sourceTree = "<group>"; };
+		43B17BE612393C7F00F523B1 /* woundcare.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = woundcare.sqlite; sourceTree = "<group>"; };
+		43CC743D12391E0900281825 /* Patient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Patient.h; path = ../Patient.h; sourceTree = "<group>"; };
+		43CC743E12391E0900281825 /* Patient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Patient.m; path = ../Patient.m; sourceTree = "<group>"; };
+		43D3BE9F126D19B80028CCF6 /* WoundTypesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WoundTypesTableViewController.h; path = ../WoundTypesTableViewController.h; sourceTree = "<group>"; };
+		43D3BEA0126D19B80028CCF6 /* WoundTypesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WoundTypesTableViewController.m; path = ../WoundTypesTableViewController.m; sourceTree = "<group>"; };
+		43D3BEA1126D19B80028CCF6 /* WoundTypesTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WoundTypesTableViewController.xib; sourceTree = "<group>"; };
+		43D93CC91246E8E9007566FE /* WoundsDataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WoundsDataObject.h; path = ../WoundsDataObject.h; sourceTree = "<group>"; };
+		43D93CCA1246E8E9007566FE /* WoundsDataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WoundsDataObject.m; path = ../WoundsDataObject.m; sourceTree = "<group>"; };
+		43D93CCC1246E9FB007566FE /* FacilityDataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FacilityDataObject.h; path = ../FacilityDataObject.h; sourceTree = "<group>"; };
+		43D93CCD1246E9FB007566FE /* FacilityDataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FacilityDataObject.m; path = ../FacilityDataObject.m; sourceTree = "<group>"; };
+		43D93CD21246EC96007566FE /* EncounterDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EncounterDataModel.h; path = ../EncounterDataModel.h; sourceTree = "<group>"; };
+		43D93CD31246EC96007566FE /* EncounterDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EncounterDataModel.m; path = ../EncounterDataModel.m; sourceTree = "<group>"; };
+		43D93CD51246EDAD007566FE /* WoundsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WoundsTableViewController.h; path = ../WoundsTableViewController.h; sourceTree = "<group>"; };
+		43D93CD61246EDAD007566FE /* WoundsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WoundsTableViewController.m; path = ../WoundsTableViewController.m; sourceTree = "<group>"; };
+		43D93CD71246EDAD007566FE /* WoundsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WoundsTableViewController.xib; sourceTree = "<group>"; };
+		43EC056F1235639D00719AE9 /* WoundCare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WoundCare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43EC05721235639D00719AE9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		43EC05741235639D00719AE9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		43EC05761235639D00719AE9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		43EC05781235639D00719AE9 /* WoundCare-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WoundCare-Info.plist"; sourceTree = "<group>"; };
+		43EC05791235639D00719AE9 /* WoundCare_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WoundCare_Prefix.pch; sourceTree = "<group>"; };
+		43EC057B1235639D00719AE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		43EC057D1235639D00719AE9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		43EC057F1235639D00719AE9 /* WoundCareAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WoundCareAppDelegate.h; sourceTree = "<group>"; };
+		43EC05801235639D00719AE9 /* WoundCareAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WoundCareAppDelegate.m; sourceTree = "<group>"; };
+		43EC05831235639E00719AE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		43EC058A1235653400719AE9 /* PatientListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PatientListTableViewController.h; path = ../PatientListTableViewController.h; sourceTree = "<group>"; };
+		43EC058B1235653400719AE9 /* PatientListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PatientListTableViewController.m; path = ../PatientListTableViewController.m; sourceTree = "<group>"; };
+		43EC058C1235653400719AE9 /* PatientListTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PatientListTableViewController.xib; sourceTree = "<group>"; };
+		43EC059412356AA500719AE9 /* PatientEncounterTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PatientEncounterTableViewController.h; path = ../PatientEncounterTableViewController.h; sourceTree = "<group>"; };
+		43EC059512356AA500719AE9 /* PatientEncounterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PatientEncounterTableViewController.m; path = ../PatientEncounterTableViewController.m; sourceTree = "<group>"; };
+		43EC059612356AA500719AE9 /* PatientEncounterTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PatientEncounterTableViewController.xib; sourceTree = "<group>"; };
+		43EC05A812356E9A00719AE9 /* PatientEncounterDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PatientEncounterDetailViewController.h; path = ../PatientEncounterDetailViewController.h; sourceTree = "<group>"; };
+		43EC05A912356E9A00719AE9 /* PatientEncounterDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PatientEncounterDetailViewController.m; path = ../PatientEncounterDetailViewController.m; sourceTree = "<group>"; };
+		43EC05AA12356E9A00719AE9 /* PatientEncounterDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PatientEncounterDetailViewController.xib; sourceTree = "<group>"; };
+		43F291381235743C000DA6C7 /* PressureUlcerDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PressureUlcerDetailViewController.h; path = ../PressureUlcerDetailViewController.h; sourceTree = "<group>"; };
+		43F291391235743C000DA6C7 /* PressureUlcerDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PressureUlcerDetailViewController.m; path = ../PressureUlcerDetailViewController.m; sourceTree = "<group>"; };
+		43F2913A1235743C000DA6C7 /* PressureUlcerDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PressureUlcerDetailViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43EC056C1235639D00719AE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43EC05731235639D00719AE9 /* UIKit.framework in Frameworks */,
+				43EC05751235639D00719AE9 /* Foundation.framework in Frameworks */,
+				43EC05771235639D00719AE9 /* CoreGraphics.framework in Frameworks */,
+				4386A5C212387B2600958E2B /* libsqlite3.0.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43EC05601235639D00719AE9 = {
+			isa = PBXGroup;
+			children = (
+				43EC05671235639D00719AE9 /* Classes */,
+				43EC05681235639D00719AE9 /* Other Sources */,
+				43EC05691235639D00719AE9 /* Resources */,
+				43EC05701235639D00719AE9 /* Products */,
+				43EC056A1235639D00719AE9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		43EC05671235639D00719AE9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				43D3BE9F126D19B80028CCF6 /* WoundTypesTableViewController.h */,
+				43D3BEA0126D19B80028CCF6 /* WoundTypesTableViewController.m */,
+				434D44FA126731DA006951B0 /* DrainageDataObject.h */,
+				434D44FB126731DA006951B0 /* DrainageDataObject.m */,
+				434D44F7126721F4006951B0 /* PressureUlcerAssessmentDataObject.h */,
+				434D44F8126721F4006951B0 /* PressureUlcerAssessmentDataObject.m */,
+				4382379D124AA9C600109712 /* Serializing.h */,
+				4382379A124AA8BA00109712 /* Query.h */,
+				4382379B124AA8BA00109712 /* Query.m */,
+				43D93CD21246EC96007566FE /* EncounterDataModel.h */,
+				43D93CD31246EC96007566FE /* EncounterDataModel.m */,
+				43D93CCC1246E9FB007566FE /* FacilityDataObject.h */,
+				43D93CCD1246E9FB007566FE /* FacilityDataObject.m */,
+				43D93CC91246E8E9007566FE /* WoundsDataObject.h */,
+				43D93CCA1246E8E9007566FE /* WoundsDataObject.m */,
+				4381BC8E1246C7F600BCFF3F /* CellDataObject.h */,
+				4381BC8F1246C7F600BCFF3F /* CellDataObject.m */,
+				43CC743D12391E0900281825 /* Patient.h */,
+				43CC743E12391E0900281825 /* Patient.m */,
+				4399FBF312879E6F00FA8101 /* WoundObjectModel.h */,
+				4399FBF412879E6F00FA8101 /* WoundObjectModel.m */,
+				438A610D124400F700B55189 /* DataObjectModel.h */,
+				438A610E124400F700B55189 /* DataObjectModel.m */,
+				4386A5BC12387A3900958E2B /* Database.h */,
+				4386A5BD12387A3900958E2B /* Database.m */,
+				4386A5B41238772400958E2B /* ResultSetCell.h */,
+				4386A5B51238772400958E2B /* ResultSetCell.m */,
+				4381BC9B1246DACC00BCFF3F /* MeasurementsDetailViewController.h */,
+				4381BC9C1246DACC00BCFF3F /* MeasurementsDetailViewController.m */,
+				4389FA4C124FEB2100A37A6C /* InputViewAccessoryController.h */,
+				4389FA4D124FEB2100A37A6C /* InputViewAccessoryController.m */,
+				438A164D123804E2004DB3A7 /* PickerViewAutomator.h */,
+				438A164E123804E2004DB3A7 /* PickerViewAutomator.m */,
+				438601181236D1DE00D06B67 /* PinCodeViewController.h */,
+				438601191236D1DE00D06B67 /* PinCodeViewController.m */,
+				4380E30F123689120052E7C1 /* SettingsTableViewController.h */,
+				4380E310123689120052E7C1 /* SettingsTableViewController.m */,
+				438E43581235D3D600EA8EC6 /* NewPatientEncounterDetailViewController.h */,
+				438E43591235D3D600EA8EC6 /* NewPatientEncounterDetailViewController.m */,
+				438E433E1235ADD000EA8EC6 /* NewPatientDetailViewController.h */,
+				438E433F1235ADD000EA8EC6 /* NewPatientDetailViewController.m */,
+				438E432A1235A76E00EA8EC6 /* WoundImageViewController.h */,
+				438E432B1235A76E00EA8EC6 /* WoundImageViewController.m */,
+				431166761235882900E42B80 /* BradenScoreDetailViewController.h */,
+				431166771235882900E42B80 /* BradenScoreDetailViewController.m */,
+				43D93CD51246EDAD007566FE /* WoundsTableViewController.h */,
+				43D93CD61246EDAD007566FE /* WoundsTableViewController.m */,
+				43785C061245A84C0042B878 /* PressureUlcerAssessmentTableViewController.h */,
+				43785C071245A84C0042B878 /* PressureUlcerAssessmentTableViewController.m */,
+				439251C11287568800E9D1B7 /* WoundLocationTableViewController.h */,
+				439251C21287568800E9D1B7 /* WoundLocationTableViewController.m */,
+				43785C111245ACD40042B878 /* PressureUlcerStagingTableViewController.h */,
+				43785C121245ACD40042B878 /* PressureUlcerStagingTableViewController.m */,
+				43F291381235743C000DA6C7 /* PressureUlcerDetailViewController.h */,
+				43F291391235743C000DA6C7 /* PressureUlcerDetailViewController.m */,
+				43EC05A912356E9A00719AE9 /* PatientEncounterDetailViewController.m */,
+				43EC05A812356E9A00719AE9 /* PatientEncounterDetailViewController.h */,
+				43EC059412356AA500719AE9 /* PatientEncounterTableViewController.h */,
+				43EC059512356AA500719AE9 /* PatientEncounterTableViewController.m */,
+				43EC058A1235653400719AE9 /* PatientListTableViewController.h */,
+				43EC058B1235653400719AE9 /* PatientListTableViewController.m */,
+				43EC057F1235639D00719AE9 /* WoundCareAppDelegate.h */,
+				43EC05801235639D00719AE9 /* WoundCareAppDelegate.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		43EC05681235639D00719AE9 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				43EC05791235639D00719AE9 /* WoundCare_Prefix.pch */,
+				43EC057D1235639D00719AE9 /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		43EC05691235639D00719AE9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				439251C31287568800E9D1B7 /* WoundLocationTableViewController.xib */,
+				43D3BEA1126D19B80028CCF6 /* WoundTypesTableViewController.xib */,
+				4389FA4E124FEB2100A37A6C /* InputViewAccessoryController.xib */,
+				43D93CD71246EDAD007566FE /* WoundsTableViewController.xib */,
+				43785C081245A84C0042B878 /* PressureUlcerAssessmentTableViewController.xib */,
+				43785C131245ACD40042B878 /* PressureUlcerStagingTableViewController.xib */,
+				4381BC9D1246DACC00BCFF3F /* MeasurementsDetailViewController.xib */,
+				43B17BE612393C7F00F523B1 /* woundcare.sqlite */,
+				438601271236FE6F00D06B67 /* application_icon.png */,
+				4386011A1236D1DE00D06B67 /* PinCodeViewController.xib */,
+				4380E311123689120052E7C1 /* SettingsTableViewController.xib */,
+				438E435A1235D3D600EA8EC6 /* NewPatientEncounterDetailViewController.xib */,
+				438E43401235ADD000EA8EC6 /* NewPatientDetailViewController.xib */,
+				438E432C1235A76E00EA8EC6 /* WoundImageViewController.xib */,
+				431166781235882900E42B80 /* BradenScoreDetailViewController.xib */,
+				43F2913A1235743C000DA6C7 /* PressureUlcerDetailViewController.xib */,
+				43EC05AA12356E9A00719AE9 /* PatientEncounterDetailViewController.xib */,
+				43EC059612356AA500719AE9 /* PatientEncounterTableViewController.xib */,
+				43EC058C1235653400719AE9 /* PatientListTableViewController.xib */,
+				43EC05781235639D00719AE9 /* WoundCare-Info.plist */,
+				43EC057A1235639D00719AE9 /* InfoPlist.strings */,
+				43EC05821235639E00719AE9 /* MainWindow.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		43EC056A1235639D00719AE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4386A5C112387B2600958E2B /* libsqlite3.0.dylib */,
+				43EC05721235639D00719AE9 /* UIKit.framework */,
+				43EC05741235639D00719AE9 /* Foundation.framework */,
+				43EC05761235639D00719AE9 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		43EC05701235639D00719AE9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43EC056F1235639D00719AE9 /* WoundCare.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43EC056E1235639D00719AE9 /* WoundCare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43EC05871235639E00719AE9 /* Build configuration list for PBXNativeTarget "WoundCare" */;
+			buildPhases = (
+				43EC056B1235639D00719AE9 /* Sources */,
+				43EC056C1235639D00719AE9 /* Frameworks */,
+				43EC056D1235639D00719AE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WoundCare;
+			productName = WoundCare;
+			productReference = 43EC056F1235639D00719AE9 /* WoundCare.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43EC05621235639D00719AE9 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 43EC05651235639D00719AE9 /* Build configuration list for PBXProject "WoundCare" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 43EC05601235639D00719AE9;
+			productRefGroup = 43EC05701235639D00719AE9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43EC056E1235639D00719AE9 /* WoundCare */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43EC056D1235639D00719AE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43EC057C1235639D00719AE9 /* InfoPlist.strings in Resources */,
+				43EC05841235639E00719AE9 /* MainWindow.xib in Resources */,
+				43EC058E1235653400719AE9 /* PatientListTableViewController.xib in Resources */,
+				43EC059812356AA500719AE9 /* PatientEncounterTableViewController.xib in Resources */,
+				43EC05AC12356E9A00719AE9 /* PatientEncounterDetailViewController.xib in Resources */,
+				43F2913C1235743C000DA6C7 /* PressureUlcerDetailViewController.xib in Resources */,
+				4311667A1235882900E42B80 /* BradenScoreDetailViewController.xib in Resources */,
+				438E432E1235A76E00EA8EC6 /* WoundImageViewController.xib in Resources */,
+				438E43421235ADD000EA8EC6 /* NewPatientDetailViewController.xib in Resources */,
+				438E435C1235D3D600EA8EC6 /* NewPatientEncounterDetailViewController.xib in Resources */,
+				4380E313123689120052E7C1 /* SettingsTableViewController.xib in Resources */,
+				4386011C1236D1DE00D06B67 /* PinCodeViewController.xib in Resources */,
+				438601281236FE6F00D06B67 /* application_icon.png in Resources */,
+				43B17BE712393C7F00F523B1 /* woundcare.sqlite in Resources */,
+				43785C0A1245A84C0042B878 /* PressureUlcerAssessmentTableViewController.xib in Resources */,
+				43785C151245ACD40042B878 /* PressureUlcerStagingTableViewController.xib in Resources */,
+				4381BC9F1246DACC00BCFF3F /* MeasurementsDetailViewController.xib in Resources */,
+				43D93CD91246EDAD007566FE /* WoundsTableViewController.xib in Resources */,
+				4389FA50124FEB2100A37A6C /* InputViewAccessoryController.xib in Resources */,
+				43D3BEA3126D19B80028CCF6 /* WoundTypesTableViewController.xib in Resources */,
+				439251C51287568800E9D1B7 /* WoundLocationTableViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43EC056B1235639D00719AE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43EC057E1235639D00719AE9 /* main.m in Sources */,
+				43EC05811235639D00719AE9 /* WoundCareAppDelegate.m in Sources */,
+				43EC058D1235653400719AE9 /* PatientListTableViewController.m in Sources */,
+				43EC059712356AA500719AE9 /* PatientEncounterTableViewController.m in Sources */,
+				43EC05AB12356E9A00719AE9 /* PatientEncounterDetailViewController.m in Sources */,
+				43F2913B1235743C000DA6C7 /* PressureUlcerDetailViewController.m in Sources */,
+				431166791235882900E42B80 /* BradenScoreDetailViewController.m in Sources */,
+				438E432D1235A76E00EA8EC6 /* WoundImageViewController.m in Sources */,
+				438E43411235ADD000EA8EC6 /* NewPatientDetailViewController.m in Sources */,
+				438E435B1235D3D600EA8EC6 /* NewPatientEncounterDetailViewController.m in Sources */,
+				4380E312123689120052E7C1 /* SettingsTableViewController.m in Sources */,
+				4386011B1236D1DE00D06B67 /* PinCodeViewController.m in Sources */,
+				438A164F123804E2004DB3A7 /* PickerViewAutomator.m in Sources */,
+				4386A5B61238772400958E2B /* ResultSetCell.m in Sources */,
+				4386A5BE12387A3900958E2B /* Database.m in Sources */,
+				43CC743F12391E0900281825 /* Patient.m in Sources */,
+				438A610F124400F700B55189 /* DataObjectModel.m in Sources */,
+				43785C091245A84C0042B878 /* PressureUlcerAssessmentTableViewController.m in Sources */,
+				43785C141245ACD40042B878 /* PressureUlcerStagingTableViewController.m in Sources */,
+				4381BC901246C7F600BCFF3F /* CellDataObject.m in Sources */,
+				4381BC9E1246DACC00BCFF3F /* MeasurementsDetailViewController.m in Sources */,
+				43D93CCB1246E8E9007566FE /* WoundsDataObject.m in Sources */,
+				43D93CCE1246E9FB007566FE /* FacilityDataObject.m in Sources */,
+				43D93CD41246EC96007566FE /* EncounterDataModel.m in Sources */,
+				43D93CD81246EDAD007566FE /* WoundsTableViewController.m in Sources */,
+				4382379C124AA8BA00109712 /* Query.m in Sources */,
+				4389FA4F124FEB2100A37A6C /* InputViewAccessoryController.m in Sources */,
+				434D44F9126721F4006951B0 /* PressureUlcerAssessmentDataObject.m in Sources */,
+				434D44FC126731DA006951B0 /* DrainageDataObject.m in Sources */,
+				43D3BEA2126D19B80028CCF6 /* WoundTypesTableViewController.m in Sources */,
+				439251C41287568800E9D1B7 /* WoundLocationTableViewController.m in Sources */,
+				4399FBF512879E6F00FA8101 /* WoundObjectModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		43EC057A1235639D00719AE9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43EC057B1235639D00719AE9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		43EC05821235639E00719AE9 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43EC05831235639E00719AE9 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43EC05851235639E00719AE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: nathan bardgett (VKLL24E68D)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "";
+				"OTHER_CFLAGS[arch=*]" = "";
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "EA54F45D-42FF-4132-A982-4B89014A80EF";
+				SDKROOT = iphoneos4.1;
+			};
+			name = Debug;
+		};
+		43EC05861235639E00719AE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: nathan bardgett (VKLL24E68D)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "EA54F45D-42FF-4132-A982-4B89014A80EF";
+				SDKROOT = iphoneos4.1;
+			};
+			name = Release;
+		};
+		43EC05881235639E00719AE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WoundCare_Prefix.pch;
+				INFOPLIST_FILE = "WoundCare-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = WoundCare;
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		43EC05891235639E00719AE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WoundCare_Prefix.pch;
+				INFOPLIST_FILE = "WoundCare-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = WoundCare;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43EC05651235639D00719AE9 /* Build configuration list for PBXProject "WoundCare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43EC05851235639E00719AE9 /* Debug */,
+				43EC05861235639E00719AE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43EC05871235639E00719AE9 /* Build configuration list for PBXNativeTarget "WoundCare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43EC05881235639E00719AE9 /* Debug */,
+				43EC05891235639E00719AE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43EC05621235639D00719AE9 /* Project object */;
+}

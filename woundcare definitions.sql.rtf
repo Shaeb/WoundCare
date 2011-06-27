@@ -1,0 +1,315 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1038\cocoasubrtf320
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red196\green26\blue22;}
+\margl1440\margr1440\vieww25100\viewh13300\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f0\fs24 \cf0 create table facilities(\
+description text\
+);\
+\
+create table woundtypes(\
+description text\
+);\
+\
+create table woundlocations(\
+description text\
+);\
+\
+create table patients(\
+patientid integer primary key,\
+name text,\
+roomnumber text\
+);\
+\
+create table encounters(\
+patientid integer,\
+facilityid integer,\
+roomnumber text,\
+scheduledDate text,\
+actualDate text,\
+foreign key(patientid) references patients(patientid) on delete cascade,\
+foreign key(facilityid) references facilities(rowid) on delete cascade\
+);\
+\
+#select e. facilityid, f.description as 'facility', e.roomnumber, e. scheduledDate, e. actualDate from encounters e, facilities f where e. patientid = %d and e. facilityid = f.rowid\
+\
+#insert into encounters(patientid, facilityid, roomnumber, scheduledDate) values(,,'','');\
+\
+create table wounds(\
+patientId integer,\
+woundTypeId integer,\
+woundLocationId integer, \
+documentedDateId integer,\
+foreign key(patientid) references patients(patientid) on delete cascade,\
+foreign key(woundTypeId) references woundtypes(rowid) on delete cascade,\
+foreign key(woundLocationId) references woundlocations(rowed) on delete cascade,\
+foreign key(documentedDateId) references encounters(rowid) on delete cascade\
+);\
+\
+#select t.description as 'type', l.description as 'location', e.scheduledDate, e.actualDate from wounds w, woundlocations l, woundtypes t, encounters e where e.rowid = w. documentedDateId and l.rowid = w. woundLocationId and #t.rowid = w. woundLocationId and w. patientId = \
+\
+#insert into wounds(patientId, woundTypeId, woundLocationId, documentedDateId) values (,,,,)\
+\
+create table pressureUlcerStages(\
+description text\
+);\
+\
+insert into pressureUlcerStages(description) values('Stage I');\
+insert into pressureUlcerStages(description) values('Stage II');\
+insert into pressureUlcerStages(description) values('Stage III');\
+insert into pressureUlcerStages(description) values('Stage IV');\
+insert into pressureUlcerStages(description) values('Unstageable');\
+\
+create table pressureUlcerAssessmentData(\
+pressureUlcerStageId integer,\
+description text,\
+code text,\
+foreign key(pressureUlcerStageId) references pressureUlcerStages(rowid) on delete cascade\
+);\
+\
+insert into pressureUlcerAssessmentData(pressureUlcerStageId, description) values(1, '
+\f1\fs22 \cf2 \CocoaLigature0 Intact Skin
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into pressureUlcerAssessmentData(pressureUlcerStageId, description) values(1, '
+\f1\fs22 \cf2 \CocoaLigature0 Nonblanchable erythema
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into pressureUlcerAssessmentData(pressureUlcerStageId, description) values(1, '
+\f1\fs22 \cf2 \CocoaLigature0 Skin is warm
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into pressureUlcerAssessmentData(pressureUlcerStageId, description) values(1, '
+\f1\fs22 \cf2 \CocoaLigature0 Skin is cool
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into pressureUlcerAssessmentData(pressureUlcerStageId, description) values(1, '
+\f1\fs22 \cf2 \CocoaLigature0 Skin is edematous
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into pressureUlcerAssessmentData(pressureUlcerStageId, description) values(1, '
+\f1\fs22 \cf2 \CocoaLigature0 Skin is firm
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into pressureUlcerAssessmentData(pressureUlcerStageId, description) values(1, '
+\f1\fs22 \cf2 \CocoaLigature0 Skin is boggy
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into pressureUlcerAssessmentData(pressureUlcerStageId, description) values(1, '
+\f1\fs22 \cf2 \CocoaLigature0 Skin is painful
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into pressureUlcerAssessmentData(pressureUlcerStageId, description) values(1, '
+\f1\fs22 \cf2 \CocoaLigature0 Skin is pruritic
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+\
+insert into pressureUlcerAssessmentData(pressureUlcerStageId, description) values(2, '
+\f1\fs22 \cf2 \CocoaLigature0 Partial skin loss
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into pressureUlcerAssessmentData(pressureUlcerStageId, description) values(2, '
+\f1\fs22 \cf2 \CocoaLigature0 Superficial ulcer
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into pressureUlcerAssessmentData(pressureUlcerStageId, description) values(2, '
+\f1\fs22 \cf2 \CocoaLigature0 Superficial abrasion
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into pressureUlcerAssessmentData(pressureUlcerStageId, description) values(2, '
+\f1\fs22 \cf2 \CocoaLigature0 Superficial blister
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into pressureUlcerAssessmentData(pressureUlcerStageId, description) values(2, '
+\f1\fs22 \cf2 \CocoaLigature0 Shallow crater
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+\
+insert into pressureUlcerAssessmentData(pressureUlcerStageId, description) values(3, '
+\f1\fs22 \cf2 \CocoaLigature0 Full thickness skin loss
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into pressureUlcerAssessmentData(pressureUlcerStageId, description) values(3, '
+\f1\fs22 \cf2 \CocoaLigature0 Subcutaneous tissue visible
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into pressureUlcerAssessmentData(pressureUlcerStageId, description) values(3, '
+\f1\fs22 \cf2 \CocoaLigature0 Nectoric Tissue
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into pressureUlcerAssessmentData(pressureUlcerStageId, description) values(3, '
+\f1\fs22 \cf2 \CocoaLigature0 Deep crater
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into pressureUlcerAssessmentData(pressureUlcerStageId, description) values(3, '
+\f1\fs22 \cf2 \CocoaLigature0 Undermining
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+\
+insert into pressureUlcerAssessmentData(pressureUlcerStageId, description) values(4, '
+\f1\fs22 \cf2 \CocoaLigature0 Extensive desctruction
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into pressureUlcerAssessmentData(pressureUlcerStageId, description) values(4, '
+\f1\fs22 \cf2 \CocoaLigature0 Muscle damage
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into pressureUlcerAssessmentData(pressureUlcerStageId, description) values(4, '
+\f1\fs22 \cf2 \CocoaLigature0 Tendon damage
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into pressureUlcerAssessmentData(pressureUlcerStageId, description) values(4, '
+\f1\fs22 \cf2 \CocoaLigature0 Bone damage
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into pressureUlcerAssessmentData(pressureUlcerStageId, description) values(4, '
+\f1\fs22 \cf2 \CocoaLigature0 Supporting structure damage
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into pressureUlcerAssessmentData(pressureUlcerStageId, description) values(4, '
+\f1\fs22 \cf2 \CocoaLigature0 Tissue necrosis
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+\
+insert into pressureUlcerAssessmentData(pressureUlcerStageId, description) values(5, '
+\f1\fs22 \cf2 \CocoaLigature0 Due to tissue necrosis
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into pressureUlcerAssessmentData(pressureUlcerStageId, description) values(5, '
+\f1\fs22 \cf2 \CocoaLigature0 Due to eschar
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+\
+create table bradenScoreSections(\
+description text\
+);\
+\
+insert into bradenScoreSections(description) values('Sensory');\
+insert into bradenScoreSections(description) values('Moisture');\
+insert into bradenScoreSections(description) values('Activity');\
+insert into bradenScoreSections(description) values('Mobility');\
+insert into bradenScoreSections(description) values('Nutrition');\
+insert into bradenScoreSections(description) values('Friction/Shear');\
+\
+create table bradenScoreOptions(\
+bradenScoreSectionId integer,\
+description text,\
+score integer,\
+foreign key(bradenScoreSectionId) references bradenScoreSections(rowed)\
+);\
+\
+insert into bradenScoreOptions(bradenScoreSectionId, description, score) values(1,'Completely Limited',1);\
+insert into bradenScoreOptions(bradenScoreSectionId, description, score) values(1,'Very Limited',2);\
+insert into bradenScoreOptions(bradenScoreSectionId, description, score) values(1,'Slightly Limited',3);\
+insert into bradenScoreOptions(bradenScoreSectionId, description, score) values(1,'no impairment',4);\
+\
+insert into bradenScoreOptions(bradenScoreSectionId, description, score) values(2,'Constantly Moist',1);\
+insert into bradenScoreOptions(bradenScoreSectionId, description, score) values(2,'Moist',2);\
+insert into bradenScoreOptions(bradenScoreSectionId, description, score) values(2,'Occasionally Moist',3);\
+insert into bradenScoreOptions(bradenScoreSectionId, description, score) values(2,'Rarely Moist',4);\
+\
+insert into bradenScoreOptions(bradenScoreSectionId, description, score) values(3,'Bedfast',1);\
+insert into bradenScoreOptions(bradenScoreSectionId, description, score) values(3,'Chairfast',2);\
+insert into bradenScoreOptions(bradenScoreSectionId, description, score) values(3,'Walks Occasionally',3);\
+insert into bradenScoreOptions(bradenScoreSectionId, description, score) values(3,'Walks Frequently',4);\
+\
+insert into bradenScoreOptions(bradenScoreSectionId, description, score) values(4,'Completely Imobile',1);\
+insert into bradenScoreOptions(bradenScoreSectionId, description, score) values(4,'Very Limited',2);\
+insert into bradenScoreOptions(bradenScoreSectionId, description, score) values(4,'Slightly Limited',3);\
+insert into bradenScoreOptions(bradenScoreSectionId, description, score) values(4,'No Impairment',4);\
+\
+insert into bradenScoreOptions(bradenScoreSectionId, description, score) values(5,'Very Poor',1);\
+insert into bradenScoreOptions(bradenScoreSectionId, description, score) values(5,'Probably Inadequate',2);\
+insert into bradenScoreOptions(bradenScoreSectionId, description, score) values(5,'Adequate',3);\
+insert into bradenScoreOptions(bradenScoreSectionId, description, score) values(5,'Excellent',4);\
+\
+insert into bradenScoreOptions(bradenScoreSectionId, description, score) values(6,'Problem',1);\
+insert into bradenScoreOptions(bradenScoreSectionId, description, score) values(6,'Potential Problem',2);\
+insert into bradenScoreOptions(bradenScoreSectionId, description, score) values(6,'No Apparent Problem',3);\
+\
+create table bradenScoreAssessment(\
+patientId integer,\
+encounterId integer,\
+bradenScoreOptionsId integer,\
+foreign key(patientId) references patients(patientId) on delete cascade,\
+foreign key(encounterId) references encounters(rowid) on delete cascade,\
+foreign key(bradenScoreOptionsId) references bradenScoreOptions(bradenScoreSectionId) on delete cascade\
+);\
+\
+insert into patients(name, roomnumber) values('Bardgett, Nathan', '400');\
+insert into patients(name, roomnumber) values('Bardgett, MiMi', '400');\
+insert into patients(name, roomnumber) values('Bardgett, Erimi', '401');\
+insert into patients(name, roomnumber) values('Bardgett, Georgie', '400');\
+insert into patients(name, roomnumber) values('Fernandez, Neal', '402');\
+insert into patients(name, roomnumber) values('Fernandez, Bama', '402');\
+insert into patients(name, roomnumber) values('Fernandez, Ellie', '403');\
+insert into patients(name, roomnumber) values('Fernandez, Claire', '403');\
+insert into patients(name, roomnumber) values('Bardgett, Dad', '404');\
+insert into patients(name, roomnumber) values('Bardgett, Mom', '404');\
+insert into patients(name, roomnumber) values('Bardgett, Hobbes', '404');\
+insert into patients(name, roomnumber) values('Bardgett, Mack', '404');\
+insert into patients(name, roomnumber) values('Bardgett, Charles', '405');\
+insert into patients(name, roomnumber) values('Bardgett, Michelle', '405');\
+insert into patients(name, roomnumber) values('Bardgett, Big O', '406');\
+insert into patients(name, roomnumber) values('Bardgett, Carson', '406');\
+\
+insert into woundtypes(description) values('
+\f1\fs22 \cf2 \CocoaLigature0 None
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into woundtypes(description) values('
+\f1\fs22 \cf2 \CocoaLigature0 Pressure Ulcer
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into woundtypes(description) values('
+\f1\fs22 \cf2 \CocoaLigature0 Venous Stasis Ulcer
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into woundtypes(description) values('
+\f1\fs22 \cf2 \CocoaLigature0 Arterial Ulcer
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into woundtypes(description) values('
+\f1\fs22 \cf2 \CocoaLigature0 Diabetic Ulcer
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into woundtypes(description) values('
+\f1\fs22 \cf2 \CocoaLigature0 Diabetic Foot
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into woundtypes(description) values('
+\f1\fs22 \cf2 \CocoaLigature0 Abcess
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into woundtypes(description) values('
+\f1\fs22 \cf2 \CocoaLigature0 Skin Tear
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into woundtypes(description) values('
+\f1\fs22 \cf2 \CocoaLigature0 Surgical Site
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into woundtypes(description) values('
+\f1\fs22 \cf2 \CocoaLigature0 Low Braden Score
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+\
+insert into woundlocations(description) values('
+\f1\fs22 \cf2 \CocoaLigature0 None
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into woundlocations(description) values('
+\f1\fs22 \cf2 \CocoaLigature0 Coccyx
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into woundlocations(description) values('
+\f1\fs22 \cf2 \CocoaLigature0 Sacrum
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into woundlocations(description) values('
+\f1\fs22 \cf2 \CocoaLigature0 Right Buttock
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into woundlocations(description) values('
+\f1\fs22 \cf2 \CocoaLigature0 Left Buttock
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into woundlocations(description) values('
+\f1\fs22 \cf2 \CocoaLigature0 Right Heel
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into woundlocations(description) values('
+\f1\fs22 \cf2 \CocoaLigature0 Left Heel
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into woundlocations(description) values('
+\f1\fs22 \cf2 \CocoaLigature0 Right Forearm
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into woundlocations(description) values('
+\f1\fs22 \cf2 \CocoaLigature0 Left Forearm
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into woundlocations(description) values('
+\f1\fs22 \cf2 \CocoaLigature0 Spine
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+\
+insert into facilities(description) values('
+\f1\fs22 \cf2 \CocoaLigature0 None
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into facilities(description) values('
+\f1\fs22 \cf2 \CocoaLigature0 Health Central
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into facilities(description) values('
+\f1\fs22 \cf2 \CocoaLigature0 ORMC
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into facilities(description) values('
+\f1\fs22 \cf2 \CocoaLigature0 Florida Hospital
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into facilities(description) values('
+\f1\fs22 \cf2 \CocoaLigature0 Health Central Park
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into facilities(description) values('
+\f1\fs22 \cf2 \CocoaLigature0 Colonial Lakes
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into facilities(description) values('
+\f1\fs22 \cf2 \CocoaLigature0 Ocoee Health Care
+\f0\fs24 \cf0 \CocoaLigature1 ');\
+insert into facilities(description) values('
+\f1\fs22 \cf2 \CocoaLigature0 Westminster
+\f0\fs24 \cf0 \CocoaLigature1 ');}
